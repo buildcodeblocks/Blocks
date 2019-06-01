@@ -1,2 +1,2 @@
-# PythonBlocks
-This repo contains code of python blocks
+# Blocks
+This repo contains code of Blocks in different languages
