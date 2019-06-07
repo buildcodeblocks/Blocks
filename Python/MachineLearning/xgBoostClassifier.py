@@ -4,6 +4,6 @@ from xgboost import XGBClassifier
 
 
 def xgBoostClassifier(X, y, max_depth=3, learning_rate=0.1, n_estimators=100):
-    xgb = XGBClassifier(max_depth, learning_rate, n_estimators)
-    xgb.fit(X, y)
-    return xgb
+    model = XGBClassifier(max_depth, learning_rate, n_estimators)
+    model.fit(X, y)
+    return model
