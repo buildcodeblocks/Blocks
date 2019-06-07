@@ -1,3 +1,4 @@
 # Predict Function
 def predict(X, model):
-    return model.predict(X)
+    pred = model.predict(X)
+    return pred
