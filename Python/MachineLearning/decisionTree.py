@@ -4,6 +4,6 @@ from sklearn.tree import DecisionTreeClassifier
 
 
 def decisionTree(X, y, criterion="gini", max_depth=None):
-    dt = DecisionTreeClassifier(criterion, max_depth)
-    dt.fit(X, y)
-    return dt
+    model = DecisionTreeClassifier(criterion, max_depth)
+    model.fit(X, y)
+    return model

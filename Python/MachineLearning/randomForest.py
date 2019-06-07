@@ -4,6 +4,6 @@ from sklearn.ensemble import RandomForestClassifier
 
 
 def randomForest(X, y, n_estimators=10, max_depth=None):
-    rf = RandomForestClassifier(n_estimators, max_depth)
-    rf.fit(X, y)
-    return rf
+    model = RandomForestClassifier(n_estimators, max_depth)
+    model.fit(X, y)
+    return model

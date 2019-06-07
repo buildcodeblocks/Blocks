@@ -4,6 +4,6 @@ from sklearn.svm import SVR
 
 
 def supportVectorRegressor(X, y, kernel="rbf", degree=3, C=1, tol=0.0001, epsilon=0.1):
-    svm = SVR(kernel, degree, C, tol, epsilon)
-    svm.fit(X, y)
-    return svm
+    model = SVR(kernel, degree, C, tol, epsilon)
+    model.fit(X, y)
+    return model

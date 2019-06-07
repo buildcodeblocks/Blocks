@@ -4,6 +4,6 @@ from sklearn.neighbors import KNeighborsClassifier
 
 
 def kNearestNeighbors(X, y, n_neighbors=5, weights="uniform"):
-    knn = KNeighborsClassifier(n_neighbors, weights)
-    knn.fit(X, y)
-    return knn
+    model = KNeighborsClassifier(n_neighbors, weights)
+    model.fit(X, y)
+    return model

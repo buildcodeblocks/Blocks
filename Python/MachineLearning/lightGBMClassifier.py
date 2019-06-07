@@ -4,7 +4,7 @@ from lightgbm import LGBMClassifier
 
 
 def lightGBMClassifier(X, y, num_leaves=31, max_depth=-1, learning_rate=0.1, n_estimators=100):
-    lgbm = LGBMClassifier(num_leaves, max_depth,
-                          learning_rate, n_estimators)
-    lgbm.fit(X, y)
-    return lgbm
+    model = LGBMClassifier(num_leaves, max_depth,
+                           learning_rate, n_estimators)
+    model.fit(X, y)
+    return model

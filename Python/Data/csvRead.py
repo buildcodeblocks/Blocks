@@ -9,5 +9,5 @@ def csvRead(file, Y=None):
         return data
     else:
         y = data[Y]
-        x = data.drop([Y], axis=1)
-        return x, y
+        X = data.drop([Y], axis=1)
+        return X, y
